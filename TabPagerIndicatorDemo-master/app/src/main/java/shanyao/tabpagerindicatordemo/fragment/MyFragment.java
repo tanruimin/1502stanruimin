@@ -1,17 +1,14 @@
 package shanyao.tabpagerindicatordemo.fragment;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.bawei.myalllib.http.MyGsonUtils;
 
@@ -25,14 +22,15 @@ import shanyao.tabpagerindicatordemo.utils.MyXutils;
 /**
  * Created by shanyao on 2016/6/17.
  */
-public class DFragment extends Fragment {
-    public static DFragment getFragment(String url) {
-        DFragment myFragment = new DFragment();
+public class MyFragment extends Fragment {
+    public static MyFragment getFragment(String url) {
+        MyFragment myFragment = new MyFragment();
         Bundle bundle = new Bundle();
         bundle.putString("url",url);
         myFragment.setArguments(bundle);
         return myFragment;
     }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

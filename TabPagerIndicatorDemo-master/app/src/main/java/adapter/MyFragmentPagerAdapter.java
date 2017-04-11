@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import java.util.List;
 
-import shanyao.tabpagerindicatordemo.fragment.DFragment;
+import shanyao.tabpagerindicatordemo.fragment.MyFragment;
 
 
 
@@ -24,7 +24,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return DFragment.getFragment(mUrl.get(position));
+        return MyFragment.getFragment(mUrl.get(position));
     }
 
     @Override

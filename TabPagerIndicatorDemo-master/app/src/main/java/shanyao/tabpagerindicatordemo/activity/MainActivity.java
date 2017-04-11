@@ -1,72 +1,58 @@
 package shanyao.tabpagerindicatordemo.activity;
 
-import android.content.Intent;
-import android.graphics.Color;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
-import shanyao.tabpagerindicatordemo.FragmentFactory;
+
+import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
+
+import com.bawei.mualllib.vp.TabPageIndicator;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import adapter.MyFragmentPagerAdapter;
 import shanyao.tabpagerindicatordemo.R;
-import shanyao.tabpagerindicatordemo.ShanYaoApplication;
-import shanyao.tabpagerindicatordemo.utils.CommonUtils;
-import shanyao.tabpagerindictor.TabPageIndicator;
+
 
 public class MainActivity extends FragmentActivity {
 
-    private TabPageIndicator indicator;
-    private ViewPager viewPager;
-    @Override
+    private TabPageIndicator mindicator;
+    private ViewPager vp;
+    private List<String> title=new ArrayList<String>();
+    private List<String> myurl=new ArrayList<String>();
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        indicator = (TabPageIndicator) findViewById(R.id.indicator);
-        viewPager = (ViewPager) findViewById(R.id.viewPager);
-        BasePagerAdapter adapter = new BasePagerAdapter(getSupportFragmentManager());
-        viewPager.setAdapter(adapter);
-        indicator.setViewPager(viewPager);
-        setTabPagerIndicator();
+        initview();
+        vp.setAdapter(new MyFragmentPagerAdapter(getSupportFragmentManager(),title,myurl));
+        mindicator.setViewPager(vp);
+
     }
 
-    private void setTabPagerIndicator() {
-        indicator.setIndicatorMode(TabPageIndicator.IndicatorMode.MODE_NOWEIGHT_EXPAND_SAME);// 设置模式，一定要先设置模式
-        indicator.setDividerColor(Color.WHITE);// 设置分割线的颜色
-        indicator.setDividerPadding(CommonUtils.dip2px(ShanYaoApplication.getContext(), 10));
-        indicator.setIndicatorColor(Color.RED);// 设置底部导航线的颜色
-        indicator.setTextColorSelected(Color.RED);// 设置tab标题选中的颜色
-        indicator.setTextColor(Color.BLACK);// 设置tab标题未被选中的颜色
-        indicator.setTextSize(CommonUtils.sp2px(ShanYaoApplication.getContext(), 16));// 设置字体大小
+    private void initview() {
+        mindicator= (TabPageIndicator) findViewById(R.id.indicator);
+        vp= (ViewPager) findViewById(R.id.vp);
+        title.add("国际");
+        title.add("时尚");
+        title.add("财经");
+        title.add("科技");
+        title.add("军事");
+        title.add("体育");
+        title.add("娱乐");
+        title.add("国内");
+        title.add("社会");
+        title.add("头条");
+        myurl.add(Mypath.gj);
+        myurl.add(Mypath.ss);
+        myurl.add(Mypath.cj);
+        myurl.add(Mypath.kj);
+        myurl.add(Mypath.js);
+        myurl.add(Mypath.ty);
+        myurl.add(Mypath.yl);
+        myurl.add(Mypath.gn);
+        myurl.add(Mypath.shehui);
+        myurl.add(Mypath.tt);
     }
-
-    class BasePagerAdapter extends FragmentStatePagerAdapter {
-        String[] titles;
-
-        public BasePagerAdapter(FragmentManager fm) {
-            super(fm);
-            this.titles = CommonUtils.getStringArray(R.array.expand_titles);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return FragmentFactory.createForExpand(position);
-        }
-
-        @Override
-        public int getCount() {
-            return titles.length;
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return titles[position];
-        }
-    }
-
 }
-
 
