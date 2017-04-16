@@ -1,0 +1,102 @@
+[
+    {
+        "outputFile": "F:\\zhoukaodemo\\Myslidelibrary\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1008,
+                    "endColumn": 57,
+                    "endOffset": 1061
+                },
+                "from": {
+                    "file": "F:\\zhoukaodemo\\Myslidelibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1008,
+                        "endColumn": 57,
+                        "endOffset": 1061
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1066,
+                    "endColumn": 55,
+                    "endOffset": 1117
+                },
+                "from": {
+                    "file": "F:\\zhoukaodemo\\Myslidelibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1066,
+                        "endColumn": 55,
+                        "endOffset": 1117
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1122,
+                    "endColumn": 43,
+                    "endOffset": 1161
+                },
+                "from": {
+                    "file": "F:\\zhoukaodemo\\Myslidelibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1122,
+                        "endColumn": 43,
+                        "endOffset": 1161
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1166,
+                    "endColumn": 49,
+                    "endOffset": 1211
+                },
+                "from": {
+                    "file": "F:\\zhoukaodemo\\Myslidelibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1166,
+                        "endColumn": 49,
+                        "endOffset": 1211
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1216,
+                    "endColumn": 42,
+                    "endOffset": 1254
+                },
+                "from": {
+                    "file": "F:\\zhoukaodemo\\Myslidelibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1216,
+                        "endColumn": 42,
+                        "endOffset": 1254
+                    }
+                }
+            }
+        ]
+    }
+]
