@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@color/progress_bar_color" />
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <gradient android:startColor="@color/video_start" android:endColor="@color/video_end" android:angle="0.0" android:centerColor="@color/video_end" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

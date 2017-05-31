@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paysdk_channel_item">400.0dip</dimen>
+    <dimen name="paysdk_btn_height">42.0dip</dimen>
+    <dimen name="sdk_btn_height">42.0dip</dimen>
+    <dimen name="comm_padding_size_1">5.0dip</dimen>
+    <dimen name="comm_padding_size_2">10.0dip</dimen>
+    <dimen name="comm_padding_size_3">15.0dip</dimen>
+    <dimen name="paysdk_comm_padding_size_1">5.0dip</dimen>
+    <dimen name="paysdk_comm_padding_size_2">10.0dip</dimen>
+    <dimen name="paysdk_comm_padding_size_3">15.0dip</dimen>
+    <dimen name="paysdk_comm_padding_size_4">20.0dip</dimen>
+    <dimen name="paysdk_comm_padding_size_5">25.0dip</dimen>
+    <dimen name="paysdk_title_bar">50.0dip</dimen>
+</resources>

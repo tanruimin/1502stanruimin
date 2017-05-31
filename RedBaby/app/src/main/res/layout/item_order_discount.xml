@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_24px" android:layout_marginBottom="@dimen/ios_public_space_24px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_20px" android:layout_marginTop="@dimen/ios_public_space_24px" android:layout_marginRight="@dimen/ios_public_space_20px">
+        <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/add_cart_disabled_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品总额" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/pub_color_seveneen" android:id="@id/tv_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_discount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_20px" android:layout_marginTop="@dimen/ios_public_space_10px" android:layout_marginRight="@dimen/ios_public_space_20px">
+        <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/add_cart_disabled_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠" android:layout_alignParentLeft="true" />
+        <TextView android:textColor="@color/pub_color_seveneen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:layout_toLeftOf="@id/tv_discount_price" />
+        <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/pub_color_seveneen" android:id="@id/tv_discount_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_energy_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_20px" android:layout_marginTop="@dimen/ios_public_space_10px" android:layout_marginRight="@dimen/ios_public_space_20px">
+        <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/add_cart_disabled_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="节能补贴" android:layout_alignParentLeft="true" />
+        <TextView android:textColor="@color/pub_color_seveneen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:layout_toLeftOf="@id/tv_energy_price" />
+        <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/pub_color_seveneen" android:id="@id/tv_energy_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_20px" android:layout_marginTop="@dimen/ios_public_space_10px" android:layout_marginRight="@dimen/ios_public_space_20px">
+        <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/add_cart_disabled_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="运费" android:layout_alignParentLeft="true" />
+        <TextView android:textColor="@color/pub_color_seveneen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" android:layout_toLeftOf="@id/tv_ship_price" />
+        <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/pub_color_seveneen" android:id="@id/tv_ship_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_tax_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_20px" android:layout_marginTop="@dimen/ios_public_space_10px" android:layout_marginRight="@dimen/ios_public_space_20px">
+        <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/add_cart_disabled_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="税费" android:layout_alignParentLeft="true" />
+        <TextView android:textColor="@color/pub_color_seveneen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" android:layout_toLeftOf="@id/tv_tax_price" />
+        <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/pub_color_seveneen" android:id="@id/tv_tax_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@drawable/category_listview_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/ios_public_space_24px" />
+</LinearLayout>

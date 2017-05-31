@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#d4d2d2"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/shopping_inclde_title"
+        layout="@layout/shopping_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shopping_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/shopping_inclde_title"
+        android:layout_weight="1"
+        android:background="#fff"
+        ></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/jiesuan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <CheckBox
+            android:id="@+id/shopping_quanxuan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shopping_bnt"
+            android:button="@null"
+            android:checked="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/shopping_quanxuan"
+            android:text="全选"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/shopping_jiesuantext"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#f00"
+            />
+
+        <TextView
+            android:id="@+id/shopping_jiesuanbnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:text="去结算(4)"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/shopping_sumprice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/shopping_jiesuanbnt"
+            android:text="￥:1212"
+            android:textColor="#f00"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/shopping_sumprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/shopping_sumprice2"
+            android:text="合计:"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shopping_sumprice"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/shopping_jiesuanbnt"
+            android:text="运费:7.00"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+</LinearLayout>

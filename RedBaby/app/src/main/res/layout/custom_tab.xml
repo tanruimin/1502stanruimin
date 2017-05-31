@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="bottom"
+    android:background="#ECEDEE" >
+
+    <RadioGroup
+        android:id="@+id/tabBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingTop="5dp" >
+
+        <RadioButton
+            android:id="@+id/tabHome"
+            style="@style/main_bottom_tab_style"
+            android:drawablePadding="0dip"
+            android:drawableTop="@drawable/tab_home" />
+
+        <RadioButton
+            android:id="@+id/tabCategory"
+            style="@style/main_bottom_tab_style"
+            android:drawablePadding="0dip"
+            android:drawableTop="@drawable/tab_category" />
+
+        <RadioButton
+            android:id="@+id/tabLepin"
+            style="@style/main_bottom_tab_style"
+            android:layout_height="match_parent"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/tabShopping"
+            style="@style/main_bottom_tab_style"
+            android:drawablePadding="0dip"
+            android:drawableTop="@drawable/tab_shopping" />
+
+        <RadioButton
+            android:id="@+id/tabMyBuy"
+            style="@style/main_bottom_tab_style"
+            android:drawablePadding="0dip"
+            android:drawableTop="@drawable/tab_myebuy" />
+    </RadioGroup>
+
+</FrameLayout>

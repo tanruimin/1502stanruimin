@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="translucent_background">#55000000</item>
+    <item type="drawable" name="translucent_background2">#00000000</item>
+    <item type="drawable" name="ucwv_translucent_background2">#00000000</item>
+</resources>

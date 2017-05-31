@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="110.0dip">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="110.0dip">
+            <ImageView
+                android:id="@+id/litem_img1"
+                android:background="@drawable/act_garden_item_bg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_background"
+                android:layout_above="@+id/litem_text1" />
+            <TextView
+
+                android:id="@+id/litem_text1"
+                android:textSize="@dimen/android_public_text_size_34px"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="25.0dip"
+                android:text="aaa"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="@dimen/android_public_space_10dp"
+            android:layout_height="fill_parent" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="110.0dip"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/litem_img2"
+                android:background="@drawable/act_garden_item_bg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_background"
+                android:layout_above="@+id/litem_text2" />
+            <TextView
+                android:id="@+id/litem_text2"
+                android:textSize="@dimen/android_public_text_size_34px"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="25.0dip"
+                android:text="bbb"
+
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View
+            android:layout_width="@dimen/android_public_space_10dp"
+
+            android:layout_height="fill_parent" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="110.0dip"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/litem_img3"
+                android:background="@drawable/act_garden_item_bg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_background"
+                android:layout_above="@+id/litem_text3" />
+            <TextView
+                android:id="@+id/litem_text3"
+                android:textSize="@dimen/android_public_text_size_34px"
+                android:gravity="center"
+                android:paddingLeft="@dimen/android_public_space_10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="25.0dip"
+                android:text=" ccc"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/android_public_space_10dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="110.0dip">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="110.0dip"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/litem_img4"
+                android:background="@drawable/act_garden_item_bg"
+                android:layout_width="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="40dp"
+                android:src="@drawable/default_background"
+                android:layout_above="@+id/litem_text4" />
+            <TextView
+                android:id="@+id/litem_text4"
+                android:textSize="@dimen/android_public_text_size_34px"
+                android:gravity="center"
+
+                android:layout_width="fill_parent"
+                android:layout_height="25.0dip"
+                android:text="eee "
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View
+            android:layout_width="@dimen/android_public_space_10dp"
+            android:layout_height="fill_parent" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="110.0dip"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/litem_img5"
+                android:background="@drawable/act_garden_item_bg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_background"
+                android:layout_above="@+id/litem_text5" />
+            <TextView
+                android:id="@+id/litem_text5"
+                android:textSize="@dimen/android_public_text_size_34px"
+                android:gravity="center"
+
+                android:layout_width="fill_parent"
+                android:layout_height="25.0dip"
+                android:text=" fff"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View
+            android:layout_width="@dimen/android_public_space_10dp"
+            android:layout_height="fill_parent" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="110.0dip"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/litem_img6"
+                android:background="@drawable/act_garden_item_bg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_background"
+                android:layout_above="@+id/litem_text6" />
+            <TextView
+                android:id="@+id/litem_text6"
+                android:textSize="@dimen/android_public_text_size_34px"
+                android:gravity="center"
+
+                android:layout_width="fill_parent"
+                android:layout_height="25.0dip"
+                android:text=" ggg"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/act_myebuy_top_bg">
+
+
+
+
+    <ImageView
+        android:id="@+id/litem_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myebuy_head"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/litem_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/myebuy_receiver_account"
+        android:textSize="15dp"
+        android:layout_below="@+id/litem_num"
+        android:layout_toEndOf="@+id/litem_vips"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"/>
+
+    <ImageView
+        android:id="@+id/litem_vips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_level_newuser"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="17dp"
+        android:layout_alignTop="@+id/litem_img"
+        android:layout_toEndOf="@+id/litem_num" />
+
+    <TextView
+        android:id="@+id/litem_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="183*******20"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/litem_vips"
+        android:layout_toEndOf="@+id/litem_img" />
+</RelativeLayout>

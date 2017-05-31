@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paysdk_channel_item">400.0dip</dimen>
+    <dimen name="pickview_container_height">205.0dip</dimen>
+    <dimen name="paysdk_btn_height">40.0dip</dimen>
+    <dimen name="sdk_btn_height">40.0dip</dimen>
+</resources>

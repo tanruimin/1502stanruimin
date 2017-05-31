@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/guide_gather_red" android:layout_width="fill_parent" android:layout_height="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_gather_title_back" android:paddingLeft="6.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_back_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tv_gather_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_gather_info_title_str" android:layout_centerInParent="true" />
+</RelativeLayout>

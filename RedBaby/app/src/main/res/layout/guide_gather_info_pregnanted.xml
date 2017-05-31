@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_gather_pregnanted" android:background="@color/guide_gather_bg_f3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/guide_gather_info_title" />
+    <FrameLayout android:id="@id/fl_gather_pregnanted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/guide_gather_red" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_gather_pregnanted_str" android:drawableTop="@drawable/guide_gather_pregnanted_baby_icon" android:drawablePadding="11.0dip" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_gather_pregnanted_light" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_gather_chosen_light" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_gather_pregnanted_date" android:background="@drawable/act_guide_gather_info_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:focusable="true" android:clickable="true" android:layout_width="272.0dip" android:layout_height="39.0dip" android:layout_marginTop="28.0dip" android:layout_below="@id/fl_gather_pregnanted" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/guide_gather_gray_99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_gather_pregnanted_date_str" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="12.0sp" android:textColor="@color/guide_gather_gray_33" android:textColorHint="@color/guide_gather_gray_cd" android:gravity="center|right" android:id="@id/et_gather_pregnanted_date" android:background="@null" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:hint="@string/guide_gather_pregnanted_date_tip_str" android:cursorVisible="false" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <Button android:enabled="false" android:textSize="14.0sp" android:textColor="@drawable/act_text_color" android:id="@id/btn_gather_confirm" android:background="@drawable/act_btn_bg_40" android:layout_width="250.0dip" android:layout_height="39.0dip" android:layout_marginTop="50.0dip" android:text="@string/guide_gather_confirm_str" android:layout_below="@id/rl_gather_pregnanted_date" android:layout_centerHorizontal="true" />
+</RelativeLayout>

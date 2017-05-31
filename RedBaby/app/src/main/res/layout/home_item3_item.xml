@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pub_color_one">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_product"
+                android:layout_width="315.0dip"
+                android:layout_height="177.5dip"
+                android:layout_centerHorizontal="true"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/default_background"/>
+
+            <ImageView
+                android:id="@+id/img_product_bg"
+                android:layout_width="315.0dip"
+                android:layout_height="177.5dip"
+                android:layout_centerHorizontal="true"
+                android:background="@color/color_80ffffff"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/default_background"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/img_sold_out"
+                android:layout_width="100.0dip"
+                android:layout_height="83.0dip"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/android_public_space_50dp"
+                android:clickable="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_sold_out_big"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/android_public_space_10dp"
+            android:paddingRight="@dimen/android_public_space_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2.0dip"
+                android:background="@drawable/home_evaluate_pro_icon"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="9.0dip"
+                android:paddingRight="3.0dip"
+                android:text="包邮"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"/>
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/color_black_333333"
+                android:textSize="16.0sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_product_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/android_public_space_8dp"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="@dimen/android_public_space_10dp"
+            android:paddingRight="@dimen/android_public_space_10dp"
+            android:textColor="@color/color_grey_999999"
+            android:textSize="12.0sp"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/android_public_space_8dp"
+            android:duplicateParentState="true"
+            android:paddingLeft="@dimen/android_public_space_10dp"
+            android:paddingRight="@dimen/android_public_space_10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/android_public_space_35dp"
+                    android:layout_marginRight="@dimen/android_public_space_4dp"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:gravity="center|right"
+                    android:textColor="@color/color_red_ff5a54"/>
+
+                <TextView
+                    android:id="@+id/tv_ref_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/android_public_space_35dp"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:gravity="center|left"
+                    android:textColor="@color/color_grey_999999"
+                    android:textSize="12.0sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:duplicateParentState="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="-1.0dip"
+                    android:background="@drawable/tv_group_clustering_bg">
+
+                    <ImageView
+                        android:layout_width="20.0dip"
+                        android:layout_height="17.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:clickable="false"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/img_clustering"/>
+
+                    <TextView
+                        android:id="@+id/tv_clustering"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/android_public_space_35dp"
+                        android:layout_alignParentRight="true"
+                        android:clickable="false"
+                        android:duplicateParentState="true"
+                        android:gravity="center|right"
+                        android:paddingRight="@dimen/android_public_space_8dp"
+                        android:textColor="@color/color_red_ff5a54"
+                        android:textSize="@dimen/android_public_textsize_12sp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_to_buy"
+                    android:layout_width="90.0dip"
+                    android:layout_height="@dimen/android_public_space_35dp"
+                    android:background="@drawable/tv_group_buy_bg"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="立即开团"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

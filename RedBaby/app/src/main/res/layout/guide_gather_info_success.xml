@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/guide_gather_bg_f3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/guide_gather_info_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_gather_success" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/guide_gather_red" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="@string/guide_gather_success_welcom_str" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/guide_gather_gray_66" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/guide_gather_success_tip_str" />
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_gather_confirm" android:background="@drawable/act_btn_enable_40" android:layout_width="250.0dip" android:layout_height="39.0dip" android:layout_marginTop="28.0dip" android:text="@string/guide_gather_success_goto_str" />
+    </LinearLayout>
+</RelativeLayout>

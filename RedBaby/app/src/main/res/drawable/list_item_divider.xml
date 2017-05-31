@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@drawable/divide_line_input" android:insetLeft="@dimen/ios_public_space_110px" android:insetRight="@dimen/ios_public_space_20px"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

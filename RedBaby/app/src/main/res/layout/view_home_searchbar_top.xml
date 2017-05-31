@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="@dimen/ios_public_space_88px"
+              android:background="#fff"
+              android:baselineAligned="false"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/android_public_space_5px"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@id/home_title_btn_barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="6.0dip"
+            android:src="@drawable/icon_scan_top"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/home_btn_search_layout"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/ios_public_space_60px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/android_public_space_5px"
+        android:layout_marginRight="@dimen/android_public_space_5px"
+        android:layout_weight="1.0"
+        android:background="@drawable/et_search_top_bg">
+
+        <ImageView
+            android:id="@id/home_search_title_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_search_home"/>
+
+        <TextView
+            android:id="@id/text_hint02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@id/home_search_title_logo"
+            android:hint="@string/homesearchbarhint"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/add_cart_disabled_text_color"
+            android:textColorHint="@color/color_gray_999999"
+            android:textSize="13.0sp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@id/message_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/android_public_space_5px"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="6.0dip"
+            android:src="@drawable/icon_mes_top"/>
+
+        <ImageView
+            android:id="@id/msg_unread_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:src="@drawable/msg_center_unread_red_circle"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/act_myebuy_bg"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#b2b2af"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#b2b2af"
+        />
+
+    <ImageView
+        android:id="@+id/ivv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/cart_pull_arrow"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/ivv"
+        android:text="您感兴趣的商品"
+        android:textColor="#bcb9b9"
+        android:textSize="18sp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item2_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/textView5"
+        ></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

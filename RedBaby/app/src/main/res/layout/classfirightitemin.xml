@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="115dp"
+        android:scaleType="fitXY"
+        android:id="@+id/type_image"
+        android:src="@mipmap/ic_launcher"
+        android:layout_height="140dp"/>
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="115dp"
+        android:id="@+id/type_name"
+        android:text="产品占位"
+        android:background="#F7FFF7"
+        android:layout_below="@id/type_image"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

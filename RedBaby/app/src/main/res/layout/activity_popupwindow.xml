@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#55000000"
+    android:layout_height="match_parent"
+    >
+
+    <WebView
+        android:id="@+id/activity_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        ></WebView>
+    <ImageView
+        android:id="@+id/web_dimiss"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/view_wv_file_chooser_delete"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="75dp"
+        />
+    </RelativeLayout>
+
+

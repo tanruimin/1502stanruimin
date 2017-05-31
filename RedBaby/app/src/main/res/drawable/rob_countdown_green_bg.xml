@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/ios_public_space_40px" android:width="@dimen/ios_public_space_40px" />
+    <corners android:radius="4.0px" />
+    <solid android:color="@color/rob_green_followed" />
+</shape>

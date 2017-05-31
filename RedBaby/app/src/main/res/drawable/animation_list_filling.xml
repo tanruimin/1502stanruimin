@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="1000" android:drawable="@drawable/commodity_native_bt_one" />
+    <item android:duration="100" android:drawable="@drawable/commodity_native_bt_two" />
+    <item android:duration="100" android:drawable="@drawable/commodity_native_bt_three" />
+    <item android:duration="100" android:drawable="@drawable/commodity_native_bt_four" />
+    <item android:duration="600" android:drawable="@drawable/commodity_native_bt_five" />
+    <item android:duration="100" android:drawable="@drawable/commodity_native_bt_six" />
+    <item android:duration="100" android:drawable="@drawable/commodity_native_bt_three" />
+    <item android:duration="100" android:drawable="@drawable/commodity_native_bt_two" />
+    <item android:duration="1000" android:drawable="@drawable/commodity_native_bt_one" />
+    <item android:duration="100" android:drawable="@drawable/commodity_native_bt_two" />
+    <item android:duration="100" android:drawable="@drawable/commodity_native_bt_three" />
+    <item android:duration="100" android:drawable="@drawable/commodity_native_bt_four" />
+    <item android:duration="600" android:drawable="@drawable/commodity_native_bt_five" />
+    <item android:duration="100" android:drawable="@drawable/commodity_native_bt_six" />
+    <item android:duration="100" android:drawable="@drawable/commodity_native_bt_three" />
+    <item android:duration="100" android:drawable="@drawable/commodity_native_bt_two" />
+    <item android:duration="2000" android:drawable="@drawable/commodity_native_bt_one" />
+</animation-list>

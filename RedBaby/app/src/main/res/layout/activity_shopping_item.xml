@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/fenge"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#efeded"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fenge"
+        >
+
+        <TextView
+            android:id="@+id/shopping_textview1"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="#fff"
+            />
+
+        <CheckBox
+            android:id="@+id/shoppingdianpu_bnt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shopping_bnt"
+            android:button="@null"
+            android:checked="true"
+            />
+
+        <TextView
+            android:id="@+id/shopping_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/shoppingdianpu_bnt"
+            android:text="店铺的名称"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/hengxian"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/shopping_name"
+            android:layout_marginTop="10dp"
+            android:background="#e2d6d6"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/hengxian"
+            android:background="#F8F8F8"
+            />
+
+        <CheckBox
+            android:id="@+id/shoppingname_bnt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/shopping_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shopping_bnt"
+            android:button="@null"
+            android:checked="true"
+            />
+
+        <ImageView
+            android:id="@+id/shopping_iv"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/shopping_name"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/icon_logistics_choujiang"
+            />
+
+        <TextView
+            android:id="@+id/shopping_inpo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/shopping_iv"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/shopping_iv"
+            android:text="商品的信息"
+            android:textSize="@dimen/android_public_text_size_20px"
+            />
+
+        <TextView
+            android:id="@+id/shopping_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/shopping_iv"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/shopping_iv"
+            android:text="￥19.7"
+            android:textColor="#f00"
+            android:textSize="@dimen/text_size_26px"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/shopping_price"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_reduce"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/text_angle_gray"
+                android:gravity="center"
+                android:text="一"
+                android:textColor="@color/grey_color1"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/tv_num"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/text_angle"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/grey_color1"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/text_angle_right"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/grey_color1"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

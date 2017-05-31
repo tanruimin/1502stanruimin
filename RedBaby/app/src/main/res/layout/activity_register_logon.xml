@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="310.0dip"
+        android:background="@color/pub_color_twelev"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90.0dip"
+            android:src="@drawable/icon_register_success" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20.0dip"
+            android:text="@string/register_success_toast"
+            android:textColor="@color/act_myebuy_text_main"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12.0dip"
+            android:text="@string/register_success_suning"
+            android:textColor="@color/act_register_success_toast"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15.0dip"
+            android:text="@string/register_success_gg"
+            android:textColor="@color/act_myebuy_text_main"
+            android:textSize="15.0sp" />
+
+        <LinearLayout
+            android:id="@id/ll_show_promotion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@id/tv_to_myebuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/android_public_space_30dp"
+            android:text="@string/register_success_myebuy"
+            android:textColor="@color/act_register_success_orange"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@id/ll_coupon"
+              android:layout_width="fill_parent"
+              android:layout_height="158.0dip"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@id/img_coupon"
+        android:layout_width="fill_parent"
+        android:layout_height="158.0dip"
+        android:background="@color/pub_color_one"
+        android:scaleType="fitXY"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/search_color_line"/>
+
+    <LinearLayout
+        android:id="@+id/home_first_title"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/title1"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/title2"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/title3"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/title4"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/title5"/>
+
+    </LinearLayout>
+</LinearLayout>

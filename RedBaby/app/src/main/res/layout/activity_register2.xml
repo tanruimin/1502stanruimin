@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pub_color_twelev"
+    android:orientation="vertical">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_login_title"
+        ></include>
+    <TextView
+        android:id="@+id/code_sent_notice_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14.0dip"
+        android:singleLine="true"
+        android:text="@string/register_verify_code_sended_notice"
+        android:textColor="@color/pub_color_nine"
+        android:textSize="15.0sp" />
+
+    <LinearLayout
+        style="@style/ETcontainer_logon_register_pub_style"
+        android:paddingRight="0.0dip">
+
+        <TextView
+            style="@style/text_logon_register"
+            android:text="@string/logon_verifycode" />
+
+        <com.erzu.dearbaby.registlogin.view.views.DivEtidActivity
+            android:id="@id/check_code_input"
+            style="@style/edittext_logon_register_pub_style"
+            android:layout_weight="1.0"
+            android:hint="@string/please_enter_verification_code"
+            android:inputType="number"
+            android:maxLength="10"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@id/img_delete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="14.0dip"
+            android:src="@drawable/btn_del_img_bg"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="@color/pub_color_six" />
+
+        <Button
+            android:id="@id/get_phone_check_code_again_register"
+            style="@style/text_get_code"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/get_voice_verifycode_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2.0dip"
+        android:paddingTop="10.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您也可以尝试:"
+            android:textColor="@color/pub_color_nine"
+            android:textSize="@dimen/android_public_text_size_26px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/get_voice_verifycode_icon" />
+
+        <TextView
+            android:id="@id/tv_get_voice_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取语音验证码"
+            android:textColor="@color/pub_login_color_twenty_one"
+            android:textSize="@dimen/android_public_text_size_26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ETcontainer_logon_register_pub_style"
+        android:layout_marginTop="14.0dip">
+
+        <TextView
+            style="@style/text_logon_register"
+            android:text="设置密码" />
+
+        <com.erzu.dearbaby.registlogin.view.views.DivEtidActivity
+            android:id="@id/password"
+            style="@style/edittext_logon_register_pub_style"
+            android:layout_weight="1.0"
+            android:hint="6-20位数字+字母或符号组合"
+            android:password="true"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@id/img_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="18.0dip"
+            android:src="@drawable/btn_del_img_bg"
+            android:visibility="gone" />
+
+        <com.erzu.dearbaby.registlogin.view.views.MyButton
+            android:id="@id/ll_login_password_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <Button
+        android:id="@id/btn_ok"
+        style="@style/btn_logon_register_pub_style"
+        android:layout_marginTop="30.0dip"
+        android:text="@string/comment_sub" />
+</LinearLayout>
